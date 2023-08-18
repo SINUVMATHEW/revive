@@ -672,6 +672,11 @@ a{
 #testimonial_area .owl-next{
     display: none;
 }
+
+
+
+}
+
 /* Style for the footer */
 .site-footer {
     background-color: #333;
@@ -697,8 +702,6 @@ a{
     .footer-content {
         padding: 10px;
     }
-}
-
 }
 
 
