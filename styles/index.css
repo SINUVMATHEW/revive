@@ -155,7 +155,8 @@ body{
 }
 
 #box-1{
-    aspect-ratio: 1/1;
+    width:1080px;
+    height:1080px;
     background: url(../assets/flippic-1.jpg) center center no-repeat;
 }
 
