@@ -155,8 +155,6 @@ body{
 }
 
 #box-1{
-    width:1080px;
-    height:1080px;
     background: url(../assets/flippic-1.jpg) center center no-repeat;
 }
 
@@ -166,7 +164,7 @@ body{
 
 #box-3{
     background: url(../assets/flippic-3.jpg) center center no-repeat;
-}
+
 #box-4{
     background: url(../assets/flippic-4.jpg) center center no-repeat;
 }
