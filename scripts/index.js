@@ -24,3 +24,28 @@ $(".testimonial_slider_area").owlCarousel({
         }
     }
 })
+
+$(".news_slider_area").owlCarousel({
+    autoplay: true,
+    slideSpeed: 300,
+    items:3,
+    margin: 30,
+    dots: false,
+    center:true,
+    dots:true,
+    dotClass:"dot",
+    dotsClass:"dots-container",
+    rewind:true,
+    loop:true,
+    responsive:{
+        320:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:3
+        }
+    }
+})
