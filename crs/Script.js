@@ -907,7 +907,7 @@ form.addEventListener('submit', function (e) {
 });
 
 let sendMail = async (options) => {
-  await fetch('http://localhost:3000/send', {
+  await fetch('https://busy-painted-glade.glitch.me/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
