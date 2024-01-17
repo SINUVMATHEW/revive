@@ -52,9 +52,21 @@ $(".news_slider_area").owlCarousel({
 
 
 let emailform =document.getElementById("email-form");
-emailform.addEventListener("submit",function(e){
+emailform.addEventListener("submit",async function(e){
     e.preventDefault();
     let formData = new FormData(emailform);
-    localStorage.setItem("email",formData.get("email"));
-    window.location.href="/crs/"
+    let email = formData.get("email");
+    await fetch("https://busy-painted-glade.glitch.me/send-enquiry", {
+        method: "POST",
+        body: JSON.stringify({email}),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }).then(res => res.json()).then(data => {
+        console.log(data);
+        if(data.status === 200){
+            alert("Thank you for subscribing to our newsletter");
+        }
+    })
 })
+

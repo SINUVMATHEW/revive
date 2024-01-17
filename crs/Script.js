@@ -819,12 +819,23 @@ resultButton.addEventListener('click', function () {
 
 });
 
+var checkbox = document.querySelector("input[name=send-mail-opt]");
+var mailInput = document.getElementById("mail-input-div");
+
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    mailInput.style.display = "block";
+  } else {
+    mailInput.style.display = "none";
+  }
+});
+
 let form = document.getElementById('crsform');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  let email = localStorage.getItem('email');
+  let formData = new FormData(form);
+  let email = formData.get("mail-input")
   if (email) {
-    let formData = new FormData(form);
     let selectedOptions = {};
     selectedOptions["marital_status"] = maritalOptions[formData.get("q1")];
     selectedOptions["spouse_or_common_law_partner_resident_of_canada"] = spouseOptions[formData.get("q2i")];
@@ -920,3 +931,4 @@ let sendMail = async (options) => {
     }
   })
 }
+

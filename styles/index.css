@@ -22,6 +22,16 @@ body{
     padding: 2em;
 }
 
+a{
+    text-decoration: none !important;
+    color: white !important;
+    font-family: 'Roboto', sans-serif;  
+}
+
+a:hover{
+    color: #FF9945 !important;
+}
+
 #logo{
     font-size: 2em;
     color: white;
@@ -37,8 +47,6 @@ body{
 .nav-item{
     margin-left: 5rem;
     font-size: 1em;
-    color: white;
-    font-family: 'Roboto', sans-serif;
 }
 
 .nav-item:hover{
