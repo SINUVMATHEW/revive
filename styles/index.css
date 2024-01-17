@@ -582,6 +582,15 @@ img{
     align-items: center;
     justify-content: center;
 }
+
+#main-content-inner{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 900ms;
+    animation-delay: 500ms;
+}
 @media(max-width:750px){
     #main-content{
         width: 100%;
@@ -773,3 +782,14 @@ img{
     color: white;
     cursor: pointer;
     }
+
+  @keyframes fadeIn {
+    0% {
+        display: none;
+      opacity: 0;
+    }
+    100% {
+        display: block;
+      opacity: 1;
+    }
+  }
