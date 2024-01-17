@@ -401,7 +401,10 @@ a{
 
 #email-form{
      width: 60%;
-    height: 3em;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
 }
 #email-input{
     width: 100%;
@@ -409,11 +412,11 @@ a{
     font-size: 1em;
     border-radius: 20px;
     border: none;
-    padding-left: 1em;
+    padding: 1em;
     box-sizing: border-box;
     margin-bottom: 1em;
     border-radius: 29px;
-    color: white;
+    color: white !important; 
     background: #334961;
     box-shadow: 5px 5px 10px 6px rgba(0, 0, 0, 0.25) inset, -4px -4px 5px -5px rgba(255, 255, 255, 0.17) inset;
 }
@@ -423,6 +426,7 @@ a{
     background: #334961;
     box-shadow: -4px -4px 7px -4px rgba(255, 255, 255, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border: none;
+    align-self: center;
     color: rgb(177, 177, 177);;
     font-size: 1em;
     padding: 0.5em 1em;

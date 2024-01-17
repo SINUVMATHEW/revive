@@ -49,3 +49,12 @@ $(".news_slider_area").owlCarousel({
         }
     }
 })
+
+
+let emailform =document.getElementById("email-form");
+emailform.addEventListener("submit",function(e){
+    e.preventDefault();
+    let formData = new FormData(emailform);
+    localStorage.setItem("email",formData.get("email"));
+    window.location.href="/crs/"
+})
