@@ -56,9 +56,10 @@ emailform.addEventListener("submit",async function(e){
     e.preventDefault();
     let formData = new FormData(emailform);
     let email = formData.get("email");
-    await fetch("https://busy-painted-glade.glitch.me/send-enquiry", {
+    let mobile = formData.get("mobile");
+    await fetch("http://localhost:3000/send-enquiry", {
         method: "POST",
-        body: JSON.stringify({email}),
+        body: JSON.stringify({email,mobile}),
         headers: {
             "Content-Type": "application/json"
         }
